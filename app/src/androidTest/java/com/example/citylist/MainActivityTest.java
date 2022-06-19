@@ -84,17 +84,17 @@ public class MainActivityTest {
         onView(withId(R.id.button_confirm)).perform(click());
 
         onView(withId(R.id.button_add)).perform(click()); //Click add button to add a city to the list
-        onView(withId(R.id.editText_name)).perform(ViewActions.typeText("New York")); //Type a city name
+        onView(withId(R.id.editText_name)).perform(ViewActions.typeText("Bogura")); //Type a city name
         Espresso.pressBack();
         onView(withId(R.id.button_confirm)).perform(click());
 
         onView(withId(R.id.button_add)).perform(click()); //Click add button to add a city to the list
-        onView(withId(R.id.editText_name)).perform(ViewActions.typeText("Chicago")); //Type a city name
+        onView(withId(R.id.editText_name)).perform(ViewActions.typeText("Khulna")); //Type a city name
         Espresso.pressBack();
         onView(withId(R.id.button_confirm)).perform(click());
 
         onView(withId(R.id.button_add)).perform(click()); //Click add button to add a city to the list
-        onView(withId(R.id.editText_name)).perform(ViewActions.typeText("Texas")); //Type a city name
+        onView(withId(R.id.editText_name)).perform(ViewActions.typeText("Rajshahi")); //Type a city name
         Espresso.pressBack();
         onView(withId(R.id.button_confirm)).perform(click());
 
@@ -102,7 +102,7 @@ public class MainActivityTest {
 
         onView(withId(R.id.showLayout)).check(matches(isDisplayed()));
 
-        onView(withText("Chicago")).check(matches(isDisplayed()));
+        onView(withText("Khulna")).check(matches(isDisplayed()));
 
         onView(withId(R.id.button)).perform(click());
 
